@@ -15,15 +15,15 @@ print("5x5 Key Metrix :")
 print(code_arr)
 
 def loc_(el, in_data):
-       if code.index(el) <= 4:
+       if code.index(el) < 5:
               i = 0
-       elif code.index(el) <= 9:
+       elif code.index(el) < 10:
               i = 1
-       elif code.index(el) <= 14:
+       elif code.index(el) < 15:
               i = 2
-       elif code.index(el) <= 19:
+       elif code.index(el) < 20:
               i = 3
-       elif code.index(el) <= 24:
+       elif code.index(el) < 25:
               i = 4
        j = code.index(el) % 5
 
@@ -44,7 +44,7 @@ def cyp(el1, el2):
               return code_arr[ax][by],code_arr[bx][ay]
 
                  
-text = "hello"
+text = input("enter text: ")
 if len(text)%2==1:
        text +="x"
 
